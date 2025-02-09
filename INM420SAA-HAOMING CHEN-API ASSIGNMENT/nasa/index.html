@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INM 420 Rest API</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- <h1 id="potd-title">hello world</h1>
+    <p id="potd-info"></p> -->
+
+    <div class="container">
+        <h1>Weather</h1>
+        
+        <!-- Location selection -->
+        <label for="location">Select Location:</label>
+        <select id="location">
+            <option value="Toronto">Toronto</option>
+            <option value="New York">New York</option>
+            <option value="London">London</option>
+            <option value="Tokyo">Tokyo</option>
+        </select>
+    
+        <!-- Current weather section -->
+        <div id="weatherInfo">
+            <h2>Current Weather</h2>
+            <div id="currentWeather">
+                <p id="currentDate"></p>
+                <p id="currentTemp"></p>
+                <p id="currentDescription"></p>
+                <img id="currentIcon" src="" alt="Weather Icon">
+            </div>
+    
+            <!-- Forecast section -->
+            <h2>3-Day Forecast</h2>
+            <div id="forecast"></div>
+        </div>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    width: 90%;
+    backdrop-filter: blur(10px);
+}
+
+/* Heading */
+h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Dropdown styling */
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+}
+
+/* Weather Info Sections */
+#weatherInfo {
+    margin-top: 15px;
+}
+
+#currentWeather {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out; 
+}
+
+/* hover effect when click it */
+#currentWeather:hover {
+    background: rgba(255, 255, 255, 0.5); /* Slightly brighter */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow */
+    transform: scale(1.02); /* Slightly enlarge */
+}
+
+.forecast-day {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+}
+
+/* icons size */
+img {
+    width: 65px;
+    display: block;
+    margin: auto;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 450px;
+    }
+}
